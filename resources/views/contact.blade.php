@@ -6,26 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    @livewireStyles
 </head>
 
 <body class="bg-gray-100">
     <div class="container mx-auto p-4">
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
-            <div class="px-6 py-4">
-                <div class="flex items-center">
-                    <img class="h-12 w-12 rounded-full object-cover" src="sample" alt="Profile Picture">
-                    <div class="ml-4">
-                        <h2 class="text-lg fontbold"></h2>
-                        <p class="text-gray-600"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <div class="px-6 py-4">
-                    <h3 class="text-xl font-semibold mb-2">Sample</h3>
-                    
-                </div>
-            </div>
+            @livewire('refresh-component')
             <div class="border-t border-gray-200">
                 <div class="container mx-auto px-6 py-10">
                     <div class="max-w-lg mx-left bg-white">
@@ -76,6 +63,7 @@
             </div>
         </div>
     </div>
+    @livewireScripts
 </body>
 
 </html>
