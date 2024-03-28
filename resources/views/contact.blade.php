@@ -12,26 +12,13 @@
 <body class="bg-gray-100">
     <div class="container mx-auto p-4">
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
+
+            <!-- livewive refresh component -->
             @livewire('refresh-component')
-            <div class="border-t border-gray-200">
-                <div class="container mx-auto px-6 py-10">
-                    <div class="max-w-lg mx-left bg-white">
-                        <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
-                        <form action="#" method="POST">
-                            <div class="mb-4">
-                                <input type="text" id="name" name="name" class="w-full px-2 py-2 border-b border-gray-300 focus:outline-none focus:border-blue-600" placeholder="Enter your name" required>
-                            </div>
-                            <div class="mb-4">
-                                <input type="email" id="email" name="email" class="w-full px-2 py-2 border-b border-gray-300 focus:outline-none focus:border-blue-600" placeholder="Enter your email" required>
-                            </div>
-                            <div class="mb-4">
-                                <textarea id="message" name="message" class="w-full px-2 py-2 border-b border-gray-300 focus:outline-none focus:border-blue-600" rows="4" placeholder="How can i help?" required></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+
+            <!-- livewive contact form -->
+            <livewire:contact-form />
+            
             <div class="border-t border-gray-200">
                 <div class="px-6 py-4">
                     <ul class="w-full flex text-center">
