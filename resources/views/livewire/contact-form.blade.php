@@ -27,7 +27,10 @@
                         <textarea id="message" name="message" wire:model="message" class="w-full px-2 py-2 border-b border-gray-300 focus:outline-none focus:border-blue-600" rows="4" placeholder="How can i help?" required></textarea>
                         @error('message') <span class="text-red-500">{{ $message }}</span> @enderror
                     </div>
-                    <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Send Message</button>
+                    <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"> 
+                        <span wire:loading wire:target="submitForm">Processing...</span>
+                        <span wire:loading.remove wire:target="submitForm">Submit</span>
+                    </button>
                 </form>
             </div>
         </div>
