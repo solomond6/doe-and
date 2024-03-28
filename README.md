@@ -14,7 +14,7 @@ This README file provides instructions for setting up the project environment an
 - Clone the repository to your local machine:
 
 ```
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/solomond6/doe-and.git
 ```
 
 - Navigate to the project directory:
